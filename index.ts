@@ -7,8 +7,8 @@ import { ThreadQueue } from "./ThreadQueue";
 import { log } from "./Logger";
 import { connectToGR } from "./GRConnector";
 
-const dst = process.argv[2] || process.argv[1];
-if (!dst || dst.includes("index")) {
+const dst = process.argv[2];
+if (!dst) {
   throw Error("You must specify destination path.");
 }
 
