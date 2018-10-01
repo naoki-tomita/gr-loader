@@ -1,5 +1,4 @@
 import { get } from "request-promise";
-import { init, scanForWiFi, connectToAP } from "./WifiControl";
 import { fill, mkdirpSync } from "./utils";
 import * as ProgressBar from "progress";
 import { createWriteStream } from "fs";
