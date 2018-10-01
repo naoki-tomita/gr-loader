@@ -1,7 +1,7 @@
 {
   "name": "gr-loader",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.0.1",
+  "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
     "start": "ts-node index.ts",
@@ -10,18 +10,18 @@
     "prebuild": "yarn clean"
   },
   "dependencies": {
-    "@types/progress": "^2.0.1",
     "mkdirp": "^0.5.1",
     "progress": "^2.0.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
-    "ts-node": "^7.0.1",
     "wifi-control": "^2.0.1"
   },
   "devDependencies": {
+    "@types/progress": "^2.0.1",
     "@types/mkdirp": "^0.5.2",
     "@types/node": "^10.11.3",
     "@types/request-promise": "^4.1.42",
+    "ts-node": "^7.0.1",
     "typescript": "^3.1.1"
   }
 }
