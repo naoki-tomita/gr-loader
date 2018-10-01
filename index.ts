@@ -8,7 +8,10 @@ import { ThreadQueue } from "./ThreadQueue";
 import { log } from "./Logger";
 import { connectToGR } from "./GRConnector";
 
-const dst = process.argv[2];
+const dst = process.argv[2] || process.argv[1];
+if (!dst || dst.includes("index")) {
+  throw Error("You must specify destination path.");
+}
 
 async function listFiles() {
   const result = await get("http://192.168.0.1/_gr/objs");
